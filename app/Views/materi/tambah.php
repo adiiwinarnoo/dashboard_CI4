@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLabusta | Dashboard</title>
+  <link rel="shortcut icon" type="image/png" href="/labusta.png"/>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -75,6 +76,7 @@
                         <label>Nama Pelajaran</label>
                         <input type="text" name="nama_pelajaran" placeholder="Masukan Nama Pelajaran" class="form-control" required autofocus>
                     </div>
+                    
                     <div class="form-group">
                         <label>Kelas</label>
                         <input type="text" name="id_kelas" placeholder="Masukan Kelas" class="form-control" required autofocus>

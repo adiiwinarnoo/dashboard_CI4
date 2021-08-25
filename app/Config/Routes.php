@@ -42,8 +42,8 @@ $routes->delete('/kelola_siswa/(:any)', 'Home::destroy/$1');
 
 $routes->get('login', 'Auth::login');
 
-$routes->presenter('materis');
-$routes->presenter('percakapan');
+$routes->presenter('materis', ['filters'=>'isLoggedIn']);
+$routes->presenter('percakapan', ['filters'=>'isLoggedIn']);
 $routes->presenter('guru');
 
 $routes->post('ApiGuru', 'ApiGuru::getGuru');

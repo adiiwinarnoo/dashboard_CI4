@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLabusta | Dashboard</title>
-  <link rel="shortcut icon" type="image/png" href="/labusta.png"/>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -39,20 +38,18 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+<?= $this->include('adminLte/head') ?>
 
 <?= $this->include('adminLte/navbar') ?>
 <?= $this->include('adminLte/sidebar') ?>
-
-<body class="hold-transition skin-blue sidebar-mini">
-
-
-<div class="wrapper">
 
   <!-- Left side column. contains the logo and sidebar -->
   
   <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-  
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -66,88 +63,52 @@
 
     <!-- Main content -->
     <section class="content">
-    <div class="box">
-        <?php if (session()->getFlashdata('success')): ?> 
-            <div class="alert alert-success alert-dismissible showfade">
-                <div class="alert-body">
-                    <button class="close" data-dismiss="alert">x</button>
-                    <b>Success !!</b>
-                    <?=session()->getFlashdata('success')?>
-                </div>
-            </div>
-        <?php endif;?>
-        <?php if (session()->getFlashdata('error')): ?> 
-            <div class="alert alert-danger alert-dismissible showfade">
-                <div class="alert-body">
-                    <button class="close" data-dismiss="alert">x</button>
-                    <b>Error !!</b>
-                    <?=session()->getFlashdata('success')?>
-                </div>
-            </div>
-        <?php endif;?>
-
-            <div class="box-header">
-              <h3 class="box-title">Data Siswa</h3>
-              <div class="section-header-button">
-                <a href="<?=base_url('tambah_siswa')?>" class="btn btn-primary pull-right">Tambah Data</a>
-              </div>
+        <div class="box">
+            <div class="box-header col-md-12">
+              <h3 class="box-title">Ubah Data Siswa</h3>
             </div>
             <!-- /.box-header -->
-            <div class="box-body no-padding table-responsive">
-                <table class="table">
-                    <tbody>
-                        <tr>
-                        <th></th>
-                            <th>No</th>
-                            <th>Nomor Induk</th>
-                            <th>Nama Lengkap</th>
-                            <th>Password</th>
-                            <th>Kelas</th>
-                            <th>Jurusan</th>
-                            <th>Jenis Kelamin</th>
-                            <th>Aksi</th>
-                        </tr>
-                        <?php foreach ($query as $key => $value):?>
-                        <tr>
-                        <td></td>
-                            <td><?=$key + 1 ?></td>
-                            <td><?=$value->Nomor_Induk?></td>
-                            <td><?=$value->Nama?></td>
-                            <td><?=$value->Password?></td>
-                            <td><?=$value->kelas?></td>
-                            <td><?=$value->Jurusan?></td>
-                            <td><?=$value->jeniskelamin?></td>
-                            <td>
-                                <a href="<?= base_url('/edit_siswa/'.$value->Nomor_Induk)?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
-                                <form action="<?=base_url('/kelola_siswa/'. $value->Nomor_Induk)?>" method="post" class="inline" onsubmit="return confirm('Yakin Hapus Data?')">
-                                    <input type="hidden" name="_method" value="DELETE">                        
-                                    <button class="btn btn-danger">
-                                    <i class="fa fa-trash"></i>
-                                    </button>
-                                </form>
-                            </td>
-                        </tr>
-                        <?php endforeach;?>
-                    </tbody>
-                    
-                </table>
-                <div class="box-tools">
-                <ul class="pagination pagination-sm pull-right" style="margin: 20px;"> 
-                  <li><a href="#">«</a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">»</a></li>
-                </ul>
-              </div>
+            <div class="box-body">
+                
+                    <form action="<?= base_url('kelola_siswa/'.$admin->Nomor_Induk)?>" method="post" autocomplete="off">
+                    <div class="form-group">
+                        <input type="hidden" name="_method" value="PUT">
+                        <label>Nomor Induk</label>
+                        <input type="text" name="Nomor_Induk" placeholder="Masukan Nomor Induk" class="form-control" value="<?=$admin->Nomor_Induk?>" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Nama</label>
+                        <input type="text" name="Nama" placeholder="Masukan Nama Lengkap" value="<?=$admin->Nama?>" class="form-control" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="Password" placeholder="Masukan Password" value="<?=$admin->Password?>" class="form-control" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label>Id_Kelas</label>
+                        <input type="text" name="Id_Kelas" placeholder="Masukan Kelas" class="form-control" value="<?=$admin->Id_Kelas?>" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label>Id_Jurusan</label>
+                        <input type="text" name="Id_Jurusan" placeholder="Masukan Jurusan" class="form-control" value="<?=$admin->Id_Jurusan?>" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label>id_jeniskelamin</label>
+                        <input type="text" name="id_jeniskelamin" placeholder="Masukan Jeniskelamin" class="form-control" value="<?=$admin->id_jeniskelamin?>" required autofocus>
+                    </div>
+                    <div class="col-md-">
+                        <button type="submit" class="btn btn-success pull-right">Simpan</button>
+                    </div>
+                </form>
+
             </div>
             <!-- /.box-body -->
-          </div>
-    
-                
-              
+        </div>         
     </section>
     <!-- /.content -->
+
+
+
   </div>
   <!-- /.content-wrapper -->
   <?= $this->include('adminLte/footer') ?>

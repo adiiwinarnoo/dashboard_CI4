@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use DB;
+use App\Models\KelasModel;
 
 class Home extends BaseController
 {
@@ -11,13 +12,19 @@ class Home extends BaseController
 		'title' => 'Home',
 		'isi' => 'home',
 		];
+	
+
 		echo view('adminLte/wraper',$data);
 
 	}
 	public function kelola_siswa()
 	{
 		$db  = \Config\Database::connect();
-		$builder 	= $db->table('students');
+		
+		$builder 	= $db->table('students')
+		->join('kelas','kelas.id = students.Id_Kelas')
+		->join('jurusans','jurusans.id = students.Id_Jurusan')
+		->join('jeniskelamins','jeniskelamins.id = students.id_jeniskelamin');
 		$query   	= $builder->get()->getResult();
 
 		echo view ('admin/kelola_siswa', compact('query'));
@@ -30,8 +37,15 @@ class Home extends BaseController
 	public function store()
 	{
 
+		$kelas = new KelasModel();
+		$kelasid = $kelas->get();
+		
+
+
+
 		$data = $this->request->getPost();
-		$this->db->table('students')->insert($data);
+
+		$this->db->table('students')->insert($data,$kelasid);
 
 		if ($this->db->affectedRows() > 0) {
 			return redirect()->to(base_url('kelola_siswa'))->with('success','Data Berhasil Disimpan');

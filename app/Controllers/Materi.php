@@ -15,8 +15,9 @@ class Materi extends ResourcePresenter
 
 	public function index()
 	{
-		$omateri = new MateriModel();
-		$data['materis'] = $omateri->findAll();
+		$model = new MateriModel();
+		$data['materis'] = $model->getMateri();
+		
 		return view('materi/index', $data);
 	}
 
@@ -112,6 +113,10 @@ class Materi extends ResourcePresenter
 	 */
 	public function delete($id = null)
 	{
-		//
+		$model = new MateriModel();
+		
+		$model->delete($id);
+
+		return redirect()->to(base_url('Materi'))->with('success','Data Berhasil DiHapus');	
 	}
 }

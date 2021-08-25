@@ -11,5 +11,13 @@ class MateriModel extends Model
 	protected $returnType           = 'object';
 	protected $allowedFields        = ['nama_pelajaran','id_kelas','link'];
 	protected $useTimestamps        = true;
+
 	
+
+	public function getMateri()
+	{
+		return $this->db->table('materis')->join('kelas','kelas.id = materis.id_kelas')
+		->get()->getResult();
+	}
+
 }

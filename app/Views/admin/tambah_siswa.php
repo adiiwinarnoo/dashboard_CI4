@@ -84,8 +84,10 @@
                         <input type="password" name="Password" placeholder="Masukan Password" class="form-control" required autofocus>
                     </div>
                     <div class="form-group">
-                        <label>Id_Kelas</label>
-                        <input type="text" name="Id_Kelas" placeholder="Masukan Kelas" class="form-control" required autofocus>
+                        <label>Kelas</label>
+                        <select name="kelas" id="kelas" class="form-control">
+                        <option value="" class="value">Kelas</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Id_Jurusan</label>
