@@ -86,16 +86,26 @@
                     <div class="form-group">
                         <label>Kelas</label>
                         <select name="kelas" id="kelas" class="form-control">
-                        <option value="" class="value">Kelas</option>
+                        <?php foreach ($kelasid as $key => $data) {?>
+                          <option value="<?=$data->kelas?>"><?=$data->kelas?></option>   
+                        <?php }?>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Id_Jurusan</label>
-                        <input type="text" name="Id_Jurusan" placeholder="Masukan Jurusan" class="form-control" required autofocus>
+                        <label>Jurusan</label>
+                        <select name="jurusan" id="jurusan" class="form-control">
+                        <?php foreach ($jurusanid as $key => $data) {?>
+                          <option value="<?=$data->Jurusan?>"><?=$data->Jurusan?></option>   
+                        <?php }?>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label>id_jeniskelamin</label>
-                        <input type="text" name="id_jeniskelamin" placeholder="Masukan Jeniskelamin" class="form-control" required autofocus>
+                        <label>JenisKelamin</label>
+                        <select name="jeniskelamin" id="jeniskelamin" class="form-control">
+                        <?php foreach ($jeniskelaminid as $key => $data) {?>
+                          <option value="<?=$data->jeniskelamin?>"><?=$data->jeniskelamin?></option>   
+                        <?php }?>
+                        </select>
                     </div>
                     <div class="col-md-">
                         <button type="submit" class="btn btn-success pull-right">Simpan</button>

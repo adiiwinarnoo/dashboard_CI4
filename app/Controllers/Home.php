@@ -3,6 +3,8 @@
 namespace App\Controllers;
 use DB;
 use App\Models\KelasModel;
+use App\Models\JurusanModel;
+use App\Models\JeniskelaminModel;
 
 class Home extends BaseController
 {
@@ -32,20 +34,40 @@ class Home extends BaseController
 
 	public function create()
 	{
-		return view('admin/tambah_siswa');
+		$kelas = new KelasModel();
+		$jurusan = new JurusanModel();
+		$jeniskelamin = new JeniskelaminModel();
+		$data['kelasid']= $kelas->findAll();
+		$data['jurusanid']= $jurusan->findAll();
+		$data['jeniskelaminid']= $jeniskelamin->findAll();
+		return view('admin/tambah_siswa', $data);
 	}
 	public function store()
 	{
+		$db  = \Config\Database::connect();
+		
+		$builder 	= $db->table('students')
+		->join('kelas','kelas.id = students.Id_Kelas')
+		->join('jurusans','jurusans.id = students.Id_Jurusan')
+		->join('jeniskelamins','jeniskelamins.id = students.id_jeniskelamin');
+		$query   	= $builder->get()->getResult();
 
 		$kelas = new KelasModel();
-		$kelasid = $kelas->get();
+		$jurusan = new JurusanModel();
+
+		$data =[
+		'Nomor_Induk' => $this->request->getPost('Nomor_Induk'),
+		'Nama' => $this->request->getPost('Nama'),
+		'Password' => $this->request->getPost('Password'),
+		'Id_Kelas' => $this->request->getPost('kelas'),
+		'Id_Jurusan' => $this->request->getPost('jurusan'),
+		'id_jeniskelamin' => $this->request->getPost('jeniskelamin'),
+		];
 		
-
-
-
-		$data = $this->request->getPost();
-
-		$this->db->table('students')->insert($data,$kelasid);
+		$this->db->table('students')->join('kelas','kelas.id = students.Id_Kelas')
+		->join('jurusans','jurusans.id = students.Id_Jurusan')
+		->join('jeniskelamins','jeniskelamins.id = students.id_jeniskelamin')
+		->insert($data, compact('query'));
 
 		if ($this->db->affectedRows() > 0) {
 			return redirect()->to(base_url('kelola_siswa'))->with('success','Data Berhasil Disimpan');
