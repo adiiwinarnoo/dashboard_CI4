@@ -60,14 +60,9 @@ class Home extends BaseController
 		'Nama' => $this->request->getPost('Nama'),
 		'Password' => $this->request->getPost('Password'),
 		'Id_Kelas' => $this->request->getPost('kelas'),
-		'Id_Jurusan' => $this->request->getPost('jurusan'),
-		'id_jeniskelamin' => $this->request->getPost('jeniskelamin'),
 		];
 		
-		$this->db->table('students')->join('kelas','kelas.id = students.Id_Kelas')
-		->join('jurusans','jurusans.id = students.Id_Jurusan')
-		->join('jeniskelamins','jeniskelamins.id = students.id_jeniskelamin')
-		->insert($data, compact('query'));
+		$this->db->table('students')->insert($data);
 
 		if ($this->db->affectedRows() > 0) {
 			return redirect()->to(base_url('kelola_siswa'))->with('success','Data Berhasil Disimpan');
