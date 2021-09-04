@@ -14,7 +14,12 @@ class GuruModel extends Model
 	
 	public function detail_guru($id_guru)
     {
-        
-        return $this->getWhere(['id_guru'=>$id_guru])->getResult();
+        $mapel = $this->db->table('guru');
+		$mapel->select('*');
+		$mapel->join('dtl_guru','dtl_guru.id_guru = guru.id_guru');
+		$query = $mapel->getWhere(['id_guru'=>$id_guru])->getResult();
+
+       
+		return view('query');
     }
 }

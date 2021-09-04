@@ -4,21 +4,26 @@ namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourcePresenter;
 use App\Models\MateriModel;
+use App\Models\KelasModel;
 
 class Materi extends ResourcePresenter
 {
 
-	function _construct()
+	public function __construct()
 	{
 		// $this->omateri= new MateriModel();
+		$this->materimodel = new MateriModel();
 	}
 
 	public function index()
 	{
+	
 		$model = new MateriModel();
-		$data['materis'] = $model->getMateri();
+		$kelas = new KelasModel();
+		$data['materis'] = $model->findAll();
+	
 		
-		return view('materi/index', $data);
+		return view('materi/index',$data);
 	}
 
 	/**
@@ -40,7 +45,9 @@ class Materi extends ResourcePresenter
 	 */
 	public function new()
 	{
-		return view('materi/tambah');
+		$kelas = new KelasModel();
+		$data['kelasid']= $kelas->findAll();	
+		return view('materi/tambah', $data);
 	}
 
 	/**
@@ -52,7 +59,12 @@ class Materi extends ResourcePresenter
 	public function create()
 	{
 		$model = new MateriModel();
-		$data = $this->request->getPost();
+		$data =[
+			'nama_pelajaran'=>$this->request->getPost('nama_pelajaran'),
+			'id_kelas' =>$this->request->getPost('kelas'),
+			'link' =>$this->request->getPost('link'),
+		];
+		
 		$model->insert($data);
 
 		return redirect()->to(base_url('Materi'))->with('success','Data Berhasil Disimpan');		
@@ -70,7 +82,11 @@ class Materi extends ResourcePresenter
 	{
 
 		$model = new MateriModel();
-		$data['materis'] = $model->where('id',$id)->first();
+		$kelas = new KelasModel();
+		$data = [
+			'materiedit' => $model->where('id', $id)->first(),
+			'kelasid' => $kelas->findAll()
+		];
 
 		return view('materi/edit',$data);
 	}

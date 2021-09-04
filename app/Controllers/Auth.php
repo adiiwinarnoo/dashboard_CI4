@@ -7,7 +7,7 @@ class Auth extends BaseController
 {
 	public function index()
 	{
-		
+		return view('auth/login');
 	}
 
     public function login()
@@ -25,7 +25,7 @@ class Auth extends BaseController
 
         if ($admin) {
             if (password_verify($post['password'], $admin->password)) {
-                $params = ['id' => $admin->id];
+                $params = ['id' => $admin->id, 'nama' => $admin->nama];
                 session()->set($params);
 
                 return redirect()->to(base_url('home'));

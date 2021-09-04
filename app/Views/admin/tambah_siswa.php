@@ -38,13 +38,14 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
-
 <?= $this->include('adminLte/head') ?>
 
 <?= $this->include('adminLte/navbar') ?>
 <?= $this->include('adminLte/sidebar') ?>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
 
   <!-- Left side column. contains the logo and sidebar -->
   
@@ -87,7 +88,7 @@
                         <label>Kelas</label>
                         <select name="kelas" id="kelas" class="form-control">
                         <?php foreach ($kelasid as $key => $data) {?>
-                          <option value="<?=$data->kelas?>"><?=$data->kelas?></option>   
+                          <option value="<?=$data->id?>"><?=$data->kelas?></option>   
                         <?php }?>
                         </select>
                     </div>
@@ -95,7 +96,7 @@
                         <label>Jurusan</label>
                         <select name="jurusan" id="jurusan" class="form-control">
                         <?php foreach ($jurusanid as $key => $data) {?>
-                          <option value="<?=$data->Jurusan?>"><?=$data->Jurusan?></option>   
+                          <option value="<?=$data->id?>"><?=$data->Jurusan?></option>   
                         <?php }?>
                         </select>
                     </div>
@@ -103,7 +104,7 @@
                         <label>JenisKelamin</label>
                         <select name="jeniskelamin" id="jeniskelamin" class="form-control">
                         <?php foreach ($jeniskelaminid as $key => $data) {?>
-                          <option value="<?=$data->jeniskelamin?>"><?=$data->jeniskelamin?></option>   
+                          <option value="<?=$data->id?>"><?=$data->jeniskelamin?></option>   
                         <?php }?>
                         </select>
                     </div>

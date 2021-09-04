@@ -21,7 +21,7 @@
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>150</h3>
+              <h3><?= $total_siswa?></h3>
 
               <p>Total Siswa SMK Lab Business School Tangerang</p>
             </div>
@@ -36,7 +36,7 @@
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
+              <h3><?=$total_admin?></h3>
 
               <p>Total Admin SMK Lab Business School Tangerang</p>
             </div>
@@ -51,18 +51,45 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>44</h3>
+              <h3><?=$total_percakapan?></h3>
 
               <p>Total Percakapan Chatbot SMK Lab Business School Tangerang</p>
             </div>
             <div class="icon">
               <i class="ion ion-chatbubbles"></i>
             </div>
-          </div>
+          </div>     
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3><?=$total_percakapan?></h3>
+
+              <p>Total Percakapan Chatbot SMK Lab Business School Tangerang</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-chatbubbles"></i>
+            </div>
+          </div>     
+        </div>
+          
+
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <?= $this->include('adminLte/chart') ?>
         </div>
 
+          <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <?= $this->include('adminLte/chart1') ?>
+        </div>
+       
 
       </div>
+      
+  
+      
 
       
       

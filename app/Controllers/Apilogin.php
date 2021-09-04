@@ -32,7 +32,7 @@ class Apilogin extends ResourceController{
 			$response = [
 				'sukses' => false,
 				'status' => 0,
-				'pesan' => 'Masukan Nomor Induk atau Password',
+				'pesan_login' => 'Masukan Nomor Induk atau Password',
 				
 			];
 			return $this->respond($response,500);
@@ -49,14 +49,14 @@ class Apilogin extends ResourceController{
 				'sukses' => true,
 				'status' => 1,
 				'pesan' => 'Login Berhasil',
-				'login' => $model->signin($nisn, $password)
+				'pesan_login' => $model->signin($nisn, $password)
 			];
 			return $this->respond($response,200);
 		}else {
 			$response = [
 				'sukses' => false,
 				'status' => 0,
-				'pesan' => 'Nomor Induk atau Password Salah',
+				'pesan_login' => 'Nomor Induk atau Password Salah',
 				
 			];
 			return $this->respond($response,500);

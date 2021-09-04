@@ -39,13 +39,14 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
-
 <?= $this->include('adminLte/head') ?>
 
 <?= $this->include('adminLte/navbar') ?>
 <?= $this->include('adminLte/sidebar') ?>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+
 
   <!-- Left side column. contains the logo and sidebar -->
   
@@ -71,19 +72,23 @@
             <!-- /.box-header -->
             <div class="box-body">
                 
-                    <form action="<?= base_url('materi/update/'.$materis->id)?>" method="post" autocomplete="off">
+                    <form action="<?= base_url('Materi/update/'.$materiedit->id)?>" method="post" autocomplete="off">
                     <div class="form-group">
                         <input type="hidden" name="_method">
                         <label>Nama Pelajaran</label>
-                        <input type="text" name="nama_pelajaran" placeholder="Masukan nama pelajaran" class="form-control" value="<?=$materis->nama_pelajaran?>" required readonly>
+                        <input type="text" name="nama_pelajaran" placeholder="Masukan nama pelajaran" class="form-control" value="<?=$materiedit->nama_pelajaran?>" required readonly>
                     </div>
                     <div class="form-group">
                         <label>Kelas</label>
-                        <input type="text" name="id_kelas" placeholder="Masukan Kelas" value="<?=$materis->id_kelas?>" class="form-control" required autofocus>
+                        <select name="kelas" id="kelas" class="form-control">
+                        <?php foreach ($kelasid as $key => $data) {?>
+                          <option value="<?=$data->id?>"><?=$data->kelas?></option>   
+                        <?php }?>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Link</label>
-                        <input type="varchar" name="link" placeholder="Masukan Link" value="<?=$materis->link?>" class="form-control" required autofocus>
+                        <input type="varchar" name="link" placeholder="Masukan Link" value="<?=$materiedit->link?>" class="form-control" required autofocus>
                     </div>
                    
                     <div class="col-md-">

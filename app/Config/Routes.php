@@ -32,7 +32,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Auth::index');
 $routes->get('/kelola_siswa', 'Home::kelola_siswa');
 $routes->get('tambah_siswa', 'Home::create');
 $routes->post('/tambah_siswa', 'Home::store');

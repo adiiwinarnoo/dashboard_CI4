@@ -102,8 +102,6 @@
                             <th>Nama Pelajaran</th>
                             <th>Kelas</th>
                             <th>Link</th>
-                            <th>Created_at</th>
-                            <th>Updated_at</th>
                             <th>Aksi</th>
                             
                         </tr>
@@ -112,13 +110,11 @@
                         <td></td>
                             <td><?=$key + 1 ?></td>
                             <td><?=$value->nama_pelajaran?></td>
-                            <td><?=$value->kelas?></td>
+                            <td><?=$value->id_kelas?></td>
                             <td><a href="<?=$value->link?>" class="href"><?=$value->link?></a></td>
-                            <td><?=$value->created_at?></td>
-                            <td><?=$value->updated_at?></td>
                             <td>
-                                <a href="<?= base_url('Materi/edit/'.$value->id)?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
-                                <form action="<?=base_url('Materi/delete/'. $value->id)?>" method="post" class="inline" onsubmit="return confirm('Yakin Hapus Data?')">
+                                <a href="<?= base_url('materi/edit/'.$value->id)?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                                <form action="<?=base_url('materi/delete/'. $value->id)?>" method="post" class="inline" onsubmit="return confirm('Yakin Hapus Data?')">
                                     <input type="hidden" name="_method" value="DELETE">                        
                                     <button class="btn btn-danger">
                                     <i class="fa fa-trash"></i>

@@ -79,7 +79,11 @@
                     
                     <div class="form-group">
                         <label>Kelas</label>
-                        <input type="text" name="id_kelas" placeholder="Masukan Kelas" class="form-control" required autofocus>
+                        <select name="kelas" id="kelas" class="form-control">
+                        <?php foreach ($kelasid as $key => $data) {?>
+                          <option value="<?=$data->id?>"><?=$data->kelas?></option>   
+                        <?php }?>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Link</label>
