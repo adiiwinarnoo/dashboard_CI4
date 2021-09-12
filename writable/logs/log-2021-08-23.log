@@ -1,0 +1,604 @@
+CRITICAL - 2021-08-23 00:26:48 --> Too few arguments to function App\Controllers\ApiGuru::getGuruID(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuruID()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:28:49 --> Too few arguments to function App\Controllers\ApiGuru::getGuruID(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuruID()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:29:56 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:30:14 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:32:36 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:32:51 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:33:00 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:33:02 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:39:34 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:41:32 --> Call to a member function num_rows() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:41:41 --> Call to a member function num_row() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:41:50 --> Call to a member function row() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 00:42:01 --> Call to a member function getRowsArray() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 01:06:33 --> Call to undefined method App\Controllers\ApiGuru::get()
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 01:06:46 --> Undefined property: App\Controllers\ApiGuru::$input
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 31, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 01:07:04 --> Call to a member function get() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 01:09:04 --> Call to a member function get() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 01:11:00 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 /opt/lampp/htdocs/LabustaCI/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('ApiGuru/getGuru')
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('ApiGuru/getGuru')
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 01:11:13 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in /opt/lampp/htdocs/LabustaCI/system/Model.php on line 800
+#0 /opt/lampp/htdocs/LabustaCI/system/Model.php(800): CodeIgniter\Database\BaseBuilder->get('id_guru')
+#1 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Model->__call('get', Array)
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#7 {main}
+CRITICAL - 2021-08-23 01:11:26 --> Call to undefined method App\Controllers\ApiGuru::get()
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 01:17:10 --> Call to undefined method App\Controllers\ApiGuru::get()
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 01:19:05 --> Undefined property: App\Controllers\ApiGuru::$input
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 31, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 01:28:27 --> Undefined property: App\Controllers\ApiGuru::$guru
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 31, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 01:29:11 --> Call to a member function post() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 01:29:25 --> Call to a member function post() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+ERROR - 2021-08-23 01:45:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+CRITICAL - 2021-08-23 01:45:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+#0 /opt/lampp/htdocs/LabustaCI/system/Database/MySQLi/Connection.php(329): mysqli->query('SELECT *\nFROM `...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/LabustaCI/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/LabustaCI/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/LabustaCI/system/Model.php(147): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/LabustaCI/system/BaseModel.php(538): CodeIgniter\Model->doFind(false, Array)
+#6 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(39): CodeIgniter\BaseModel->find(Array)
+#7 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#8 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#9 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#12 {main}
+CRITICAL - 2021-08-23 01:47:05 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 01:47:28 --> Object of class App\Models\GuruModel could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', '/opt/lampp/htdo...', 381, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/Database/Query.php(381): implode(',', Array)
+#2 /opt/lampp/htdocs/LabustaCI/system/Database/Query.php(355): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 /opt/lampp/htdocs/LabustaCI/system/Database/Query.php(170): CodeIgniter\Database\Query->compileBinds()
+#4 /opt/lampp/htdocs/LabustaCI/system/Database/BaseConnection.php(647): CodeIgniter\Database\Query->getQuery()
+#5 /opt/lampp/htdocs/LabustaCI/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 /opt/lampp/htdocs/LabustaCI/system/Model.php(147): CodeIgniter\Database\BaseBuilder->get()
+#7 /opt/lampp/htdocs/LabustaCI/system/BaseModel.php(538): CodeIgniter\Model->doFind(false, Array)
+#8 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(39): CodeIgniter\BaseModel->find(Array)
+#9 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#10 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#11 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#14 {main}
+CRITICAL - 2021-08-23 01:55:14 --> Undefined property: App\Controllers\ApiGuru::$guru
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 31, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 02:07:18 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 2 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 02:07:46 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 2 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 02:07:57 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and at least 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 02:08:05 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 02:08:16 --> Too few arguments to function App\Controllers\ApiGuru::getGuru(), 0 passed in /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 02:08:45 --> Undefined variable: guruid
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 38, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+ERROR - 2021-08-23 02:08:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+CRITICAL - 2021-08-23 02:08:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+#0 /opt/lampp/htdocs/LabustaCI/system/Database/MySQLi/Connection.php(329): mysqli->query('SELECT *\nFROM `...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/LabustaCI/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/LabustaCI/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/LabustaCI/system/Model.php(147): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/LabustaCI/system/BaseModel.php(538): CodeIgniter\Model->doFind(false, Array)
+#6 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(38): CodeIgniter\BaseModel->find(Array)
+#7 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#8 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#9 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#12 {main}
+CRITICAL - 2021-08-23 02:11:02 --> Call to undefined method App\Controllers\ApiGuru::getGuruID()
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 03:23:08 --> Class 'App\Controllers\GuruModel' not found
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiSiswa->tampildata()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiSiswa))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 03:23:52 --> Object of class App\Models\GuruModel could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', '/opt/lampp/htdo...', 387, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/Database/Query.php(387): strtr('SELECT *\nFROM `...', Array)
+#2 /opt/lampp/htdocs/LabustaCI/system/Database/Query.php(355): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 /opt/lampp/htdocs/LabustaCI/system/Database/Query.php(170): CodeIgniter\Database\Query->compileBinds()
+#4 /opt/lampp/htdocs/LabustaCI/system/Database/BaseConnection.php(647): CodeIgniter\Database\Query->getQuery()
+#5 /opt/lampp/htdocs/LabustaCI/system/Database/BaseBuilder.php(2049): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 /opt/lampp/htdocs/LabustaCI/system/Model.php(800): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#7 /opt/lampp/htdocs/LabustaCI/app/Models/GuruModel.php(18): CodeIgniter\Model->__call('getWhere', Array)
+#8 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiSiswa.php(15): App\Models\GuruModel->detail_guru(Object(App\Models\GuruModel))
+#9 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiSiswa->tampildata()
+#10 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiSiswa))
+#11 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#14 {main}
+CRITICAL - 2021-08-23 03:25:30 --> Too few arguments to function App\Models\GuruModel::detail_guru(), 0 passed in /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiSiswa.php on line 15 and exactly 1 expected
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiSiswa.php(15): App\Models\GuruModel->detail_guru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiSiswa->tampildata()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiSiswa))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 03:26:09 --> Undefined variable: data
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiSiswa.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 20, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiSiswa->tampildata()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiSiswa))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 04:03:11 --> Call to a member function find() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 04:04:21 --> Call to a member function find() on null
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 04:13:36 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 04:21:03 --> ApiSiswa is not a validation rules group.
+#0 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(601): CodeIgniter\Validation\Exceptions\ValidationException::forGroupNotFound('ApiSiswa')
+#1 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(119): CodeIgniter\Validation\Validation->loadRuleGroup('ApiSiswa')
+#2 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(41): CodeIgniter\Validation\Validation->run(Array, 'ApiSiswa')
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2021-08-23 04:24:03 --> ApiSiswa is not a validation rules group.
+#0 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(601): CodeIgniter\Validation\Exceptions\ValidationException::forGroupNotFound('ApiSiswa')
+#1 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(119): CodeIgniter\Validation\Validation->loadRuleGroup('ApiSiswa')
+#2 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(41): CodeIgniter\Validation\Validation->run(Array, 'ApiSiswa')
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2021-08-23 04:27:33 --> id guru wajib diisi is not a valid rule.
+#0 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(321): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('id guru wajib d...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(159): CodeIgniter\Validation\Validation->processRules('id_guru', 'id_guru', NULL, Array, Array)
+#2 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(41): CodeIgniter\Validation\Validation->run(Array, 'auth_errors')
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2021-08-23 04:29:04 --> syntax error, unexpected '=', expecting ']'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Validati...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Validati...')
+#3 [internal function]: spl_autoload_call('Config\\Validati...')
+#4 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(149): class_exists('Config\\Validati...')
+#5 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass(Array, 'Validation')
+#6 /opt/lampp/htdocs/LabustaCI/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(841): config('Validation')
+#8 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation(NULL, false)
+#9 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#10 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(838): CodeIgniter\Config\BaseService::getSharedInstance('validation', NULL)
+#11 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation()
+#12 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#13 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#14 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#15 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#18 {main}
+CRITICAL - 2021-08-23 04:29:33 --> syntax error, unexpected '=', expecting ']'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Validati...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Validati...')
+#3 [internal function]: spl_autoload_call('Config\\Validati...')
+#4 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(149): class_exists('Config\\Validati...')
+#5 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass(Array, 'Validation')
+#6 /opt/lampp/htdocs/LabustaCI/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(841): config('Validation')
+#8 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation(NULL, false)
+#9 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#10 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(838): CodeIgniter\Config\BaseService::getSharedInstance('validation', NULL)
+#11 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation()
+#12 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#13 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#14 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#15 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#18 {main}
+CRITICAL - 2021-08-23 04:29:38 --> syntax error, unexpected '=', expecting ']'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Validati...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Validati...')
+#3 [internal function]: spl_autoload_call('Config\\Validati...')
+#4 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(149): class_exists('Config\\Validati...')
+#5 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass(Array, 'Validation')
+#6 /opt/lampp/htdocs/LabustaCI/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(841): config('Validation')
+#8 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation(NULL, false)
+#9 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#10 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(838): CodeIgniter\Config\BaseService::getSharedInstance('validation', NULL)
+#11 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation()
+#12 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#13 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#14 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#15 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#18 {main}
+CRITICAL - 2021-08-23 04:29:39 --> syntax error, unexpected '=', expecting ']'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Validati...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Validati...')
+#3 [internal function]: spl_autoload_call('Config\\Validati...')
+#4 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(149): class_exists('Config\\Validati...')
+#5 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass(Array, 'Validation')
+#6 /opt/lampp/htdocs/LabustaCI/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(841): config('Validation')
+#8 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation(NULL, false)
+#9 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#10 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(838): CodeIgniter\Config\BaseService::getSharedInstance('validation', NULL)
+#11 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation()
+#12 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#13 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#14 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#15 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#18 {main}
+CRITICAL - 2021-08-23 04:30:31 --> syntax error, unexpected '=', expecting ']'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Validati...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Validati...')
+#3 [internal function]: spl_autoload_call('Config\\Validati...')
+#4 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(149): class_exists('Config\\Validati...')
+#5 /opt/lampp/htdocs/LabustaCI/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass(Array, 'Validation')
+#6 /opt/lampp/htdocs/LabustaCI/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(841): config('Validation')
+#8 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation(NULL, false)
+#9 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#10 /opt/lampp/htdocs/LabustaCI/system/Config/Services.php(838): CodeIgniter\Config\BaseService::getSharedInstance('validation', NULL)
+#11 /opt/lampp/htdocs/LabustaCI/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation()
+#12 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(31): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#13 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#14 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#15 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#18 {main}
+CRITICAL - 2021-08-23 04:32:18 --> Undefined variable: guru_errors
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 45, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 04:33:21 --> Wajib Di isi is not a valid rule.
+#0 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(321): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Wajib Di isi')
+#1 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(159): CodeIgniter\Validation\Validation->processRules('id_guru', 'id_guru', NULL, Array, Array)
+#2 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(41): CodeIgniter\Validation\Validation->run(Array, 'guru_errors')
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2021-08-23 04:33:49 --> id guru wajib di isi is not a valid rule.
+#0 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(321): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('id guru wajib d...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(159): CodeIgniter\Validation\Validation->processRules('id_guru', 'id_guru', NULL, Array, Array)
+#2 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(41): CodeIgniter\Validation\Validation->run(Array, 'ApiGuru')
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2021-08-23 05:51:03 --> Undefined variable: guruid
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 66, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuruAll()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 23:10:16 --> syntax error, unexpected '}', expecting end of file
+#0 /opt/lampp/htdocs/LabustaCI/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('Apilogin/Login')
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Apilogin/Login')
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+ERROR - 2021-08-23 23:11:49 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-08-23 23:11:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /opt/lampp/htdocs/LabustaCI/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /opt/lampp/htdocs/LabustaCI/system/Database/BaseBuilder.php(2049): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /opt/lampp/htdocs/LabustaCI/system/Model.php(800): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#3 /opt/lampp/htdocs/LabustaCI/app/Models/GuruModel.php(18): CodeIgniter\Model->__call('getWhere', Array)
+#4 /opt/lampp/htdocs/LabustaCI/app/Controllers/ApiGuru.php(45): App\Models\GuruModel->detail_guru('1')
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\ApiGuru->getGuru()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiGuru))
+#7 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#10 {main}
+CRITICAL - 2021-08-23 23:13:17 --> Class 'App\Controllers\LoginModel' not found
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Apilogin->Login()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apilogin))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 23:18:54 --> Call to undefined method CodeIgniter\Validation\Validation::login_error()
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Apilogin->Login()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apilogin))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 23:19:15 --> Call to undefined method CodeIgniter\Validation\Validation::login_error()
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Apilogin->Login()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apilogin))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 23:19:32 --> Call to undefined method CodeIgniter\Validation\Validation::errors()
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Apilogin->Login()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apilogin))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-23 23:27:23 --> wajib is not a valid rule.
+#0 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(321): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('wajib')
+#1 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(159): CodeIgniter\Validation\Validation->processRules('Nomor_Induk', 'Nomor_Induk', NULL, Array, Array)
+#2 /opt/lampp/htdocs/LabustaCI/app/Controllers/Apilogin.php(33): CodeIgniter\Validation\Validation->run(Array, 'Apilogin')
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Apilogin->Login()
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apilogin))
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2021-08-23 23:27:36 --> require is not a valid rule.
+#0 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(321): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('require')
+#1 /opt/lampp/htdocs/LabustaCI/system/Validation/Validation.php(159): CodeIgniter\Validation\Validation->processRules('Nomor_Induk', 'Nomor_Induk', NULL, Array, Array)
+#2 /opt/lampp/htdocs/LabustaCI/app/Controllers/Apilogin.php(33): CodeIgniter\Validation\Validation->run(Array, 'Apilogin')
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Apilogin->Login()
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apilogin))
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2021-08-23 23:38:31 --> Call to undefined method App\Models\LoginModel::sigin
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Apilogin.php(27): CodeIgniter\Model->__call('sigin', Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Apilogin->Login()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apilogin))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-23 23:41:37 --> syntax error, unexpected ';', expecting ']'
+#0 /opt/lampp/htdocs/LabustaCI/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('Apilogin/Login')
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Apilogin/Login')
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}

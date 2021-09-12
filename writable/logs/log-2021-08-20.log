@@ -1,0 +1,299 @@
+CRITICAL - 2021-08-20 00:48:06 --> Undefined property: App\Controllers\Materi::$materi
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:48:44 --> Undefined property: App\Controllers\Materi::$materi
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:48:57 --> Undefined property: App\Controllers\Materi::$materi
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:49:22 --> Undefined property: App\Controllers\Materi::$materis
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:53:28 --> Undefined property: App\Controllers\Materi::$materi1
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:53:59 --> syntax error, unexpected '='
+#0 /opt/lampp/htdocs/LabustaCI/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('Materi')
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Materi')
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:54:19 --> Undefined property: App\Controllers\Materi::$materi1
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:55:39 --> Class 'App\Controllers\MateriModel' not found
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-20 00:55:41 --> Class 'App\Controllers\MateriModel' not found
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-20 00:56:04 --> Undefined property: App\Controllers\Materi::$materi1
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 19, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:56:20 --> Object of class App\Models\MateriModel could not be converted to string
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', '/opt/lampp/htdo...', 19, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:58:32 --> syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /opt/lampp/htdocs/LabustaCI/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('Materi')
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Materi')
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 00:59:12 --> Undefined property: App\Controllers\Materi::$omateri
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 19, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 01:00:36 --> Undefined property: stdClass::$Nomor_Induk
+#0 /opt/lampp/htdocs/LabustaCI/app/Views/materi/index.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 116, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/View/View.php(230): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('materi/index', Array, true)
+#4 /opt/lampp/htdocs/LabustaCI/app/Controllers/Materi.php(20): view('materi/index', Array)
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Materi->index()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#7 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#10 {main}
+CRITICAL - 2021-08-20 03:10:22 --> Class 'App\Controllers\PercakapanModel' not found
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Percakapan->index()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Percakapan))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-20 03:10:39 --> Undefined property: App\Controllers\Percakapan::$chat
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Percakapan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Percakapan->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Percakapan))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 03:10:50 --> Undefined property: App\Controllers\Percakapan::$chat
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Percakapan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Percakapan->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Percakapan))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 03:10:53 --> Undefined property: App\Controllers\Percakapan::$chat
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Percakapan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Percakapan->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Percakapan))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 03:11:14 --> Argument 2 passed to view() must be of the type array, object given, called in /opt/lampp/htdocs/LabustaCI/app/Controllers/Percakapan.php on line 19
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Percakapan.php(19): view('percakapan/inde...', Object(App\Models\PercakapanModel))
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Percakapan->index()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Percakapan))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 11:17:26 --> Invalid file: head.php
+#0 /opt/lampp/htdocs/LabustaCI/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('head.php')
+#1 /opt/lampp/htdocs/LabustaCI/system/View/View.php(487): CodeIgniter\View\View->render('head.php', NULL, true)
+#2 /opt/lampp/htdocs/LabustaCI/app/Views/adminLte/sidebar.php(1): CodeIgniter\View\View->include('head.php')
+#3 /opt/lampp/htdocs/LabustaCI/system/View/View.php(230): include('/opt/lampp/htdo...')
+#4 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('adminLte/sideba...', Array, true)
+#6 /opt/lampp/htdocs/LabustaCI/app/Views/adminLte/wraper.php(4): view('adminLte/sideba...')
+#7 /opt/lampp/htdocs/LabustaCI/system/View/View.php(230): include('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('adminLte/wraper', Array, true)
+#10 /opt/lampp/htdocs/LabustaCI/app/Controllers/Home.php(11): view('adminLte/wraper')
+#11 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Home->index()
+#12 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#13 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#15 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#16 {main}
+CRITICAL - 2021-08-20 11:27:30 --> Invalid file: head.php
+#0 /opt/lampp/htdocs/LabustaCI/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('head.php')
+#1 /opt/lampp/htdocs/LabustaCI/system/View/View.php(246): CodeIgniter\View\View->render('head', Array, true)
+#2 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('adminLte/sideba...', Array, true)
+#3 /opt/lampp/htdocs/LabustaCI/app/Views/adminLte/wraper.php(4): view('adminLte/sideba...')
+#4 /opt/lampp/htdocs/LabustaCI/system/View/View.php(230): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('adminLte/wraper', Array, true)
+#7 /opt/lampp/htdocs/LabustaCI/app/Controllers/Home.php(11): view('adminLte/wraper')
+#8 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Home->index()
+#9 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#13 {main}
+CRITICAL - 2021-08-20 11:29:04 --> Invalid file: head.php
+#0 /opt/lampp/htdocs/LabustaCI/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('head.php')
+#1 /opt/lampp/htdocs/LabustaCI/system/View/View.php(487): CodeIgniter\View\View->render('head', NULL, true)
+#2 /opt/lampp/htdocs/LabustaCI/app/Views/adminLte/sidebar.php(3): CodeIgniter\View\View->include('head')
+#3 /opt/lampp/htdocs/LabustaCI/system/View/View.php(230): include('/opt/lampp/htdo...')
+#4 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('adminLte/sideba...', Array, true)
+#6 /opt/lampp/htdocs/LabustaCI/app/Views/adminLte/wraper.php(4): view('adminLte/sideba...')
+#7 /opt/lampp/htdocs/LabustaCI/system/View/View.php(230): include('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('adminLte/wraper', Array, true)
+#10 /opt/lampp/htdocs/LabustaCI/app/Controllers/Home.php(11): view('adminLte/wraper')
+#11 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Home->index()
+#12 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#13 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#15 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#16 {main}
+CRITICAL - 2021-08-20 12:07:22 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-20 12:08:30 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-20 13:03:50 --> syntax error, unexpected '=', expecting ']'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2021-08-20 13:07:19 --> syntax error, unexpected '=', expecting ']'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2021-08-20 13:07:21 --> syntax error, unexpected '=', expecting ']'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2021-08-20 15:09:00 --> syntax error, unexpected '}', expecting ';'
+#0 /opt/lampp/htdocs/LabustaCI/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('Guru')
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Guru')
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-20 15:16:49 --> Undefined variable: gurus
+#0 /opt/lampp/htdocs/LabustaCI/app/Views/guru/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 108, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/View/View.php(230): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('guru/index', Array, true)
+#4 /opt/lampp/htdocs/LabustaCI/app/Controllers/Guru.php(16): view('guru/index')
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Guru->index()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#7 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#10 {main}
+CRITICAL - 2021-08-20 15:18:31 --> Class 'App\Controllers\GuruModel' not found
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Guru->index()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-20 15:18:48 --> Class 'Models\GuruModel' not found
+#0 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Guru->index()
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-20 15:18:53 --> Undefined property: stdClass::$Nomor_Induk
+#0 /opt/lampp/htdocs/LabustaCI/app/Views/guru/index.php(114): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 114, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/View/View.php(230): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('guru/index', Array, true)
+#4 /opt/lampp/htdocs/LabustaCI/app/Controllers/Guru.php(19): view('guru/index', Array)
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Guru->index()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#7 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#10 {main}
+CRITICAL - 2021-08-20 15:19:18 --> syntax error, unexpected 'Induk' (T_STRING), expecting ',' or ';'
+#0 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('guru/index', Array, true)
+#2 /opt/lampp/htdocs/LabustaCI/app/Controllers/Guru.php(19): view('guru/index', Array)
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Guru->index()
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}

@@ -1,0 +1,107 @@
+CRITICAL - 2021-08-19 00:10:47 --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP)
+#0 /opt/lampp/htdocs/LabustaCI/app/Views/auth/login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/opt/lampp/htdo...', 11, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/View/View.php(230): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/LabustaCI/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /opt/lampp/htdocs/LabustaCI/system/Common.php(1271): CodeIgniter\View\View->render('auth/login', Array, true)
+#4 /opt/lampp/htdocs/LabustaCI/app/Controllers/Auth.php(15): view('auth/login')
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Auth->login()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#10 {main}
+ERROR - 2021-08-19 01:18:10 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:22:45 --> Error connecting to the database: No such file or directory
+ERROR - 2021-08-19 01:23:54 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:24:13 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:27:11 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:32:21 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:35:23 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:35:51 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:38:46 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-08-19 01:38:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /opt/lampp/htdocs/LabustaCI/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /opt/lampp/htdocs/LabustaCI/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /opt/lampp/htdocs/LabustaCI/app/Controllers/Home.php(22): CodeIgniter\Database\BaseBuilder->get()
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Home->kelola_siswa()
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2021-08-19 01:38:46 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /opt/lampp/htdocs/LabustaCI/app/Views/errors/html/error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/opt/lampp/htdo...', 99, Array)
+#1 /opt/lampp/htdocs/LabustaCI/app/Views/errors/html/error_exception.php(99): print_r(Object(App\Controllers\Home), true)
+#2 /opt/lampp/htdocs/LabustaCI/system/Debug/Exceptions.php(278): include('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/LabustaCI/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-08-19 01:39:29 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:42:38 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:49:09 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:51:38 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:55:41 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2021-08-19 01:56:00 --> Unknown column 'namespace' in 'where clause'
+CRITICAL - 2021-08-19 02:10:03 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2021-08-19 02:11:10 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2021-08-19 02:11:13 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/LabustaCI/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2021-08-19 02:12:08 --> Undefined index: password
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Auth.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 24, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Auth->loginProses()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-19 02:13:07 --> Undefined index: nomor_induk
+#0 /opt/lampp/htdocs/LabustaCI/app/Controllers/Auth.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 20, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(928): App\Controllers\Auth->loginProses()
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+ERROR - 2021-08-19 02:29:41 --> Duplicate entry '2147483647' for key 'nomor_induk'
+CRITICAL - 2021-08-19 03:45:25 --> Undefined variable: auth
+#0 /opt/lampp/htdocs/LabustaCI/app/Filters/loginFilter.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 13, Array)
+#1 /opt/lampp/htdocs/LabustaCI/system/Filters/Filters.php(181): App\Filters\loginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('home', 'before')
+#3 /opt/lampp/htdocs/LabustaCI/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/LabustaCI/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/LabustaCI/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
