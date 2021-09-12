@@ -38,10 +38,19 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
+<<<<<<< HEAD
 <?= $this->include('adminLte/head') ?>
+=======
+
+>>>>>>> 1738dd3a85b967b424e4eba37c66f40b26f6a760
 
 <?= $this->include('adminLte/navbar') ?>
 <?= $this->include('adminLte/sidebar') ?>
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+
 
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">

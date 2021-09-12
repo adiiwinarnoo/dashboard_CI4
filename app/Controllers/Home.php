@@ -104,8 +104,6 @@ class Home extends BaseController
 		'Nama' => $this->request->getPost('Nama'),
 		'Password' => $this->request->getPost('Password'),
 		'Id_Kelas' => $this->request->getPost('kelas'),
-		'Id_Jurusan' => $this->request->getPost('jurusan'),
-		'id_jeniskelamin' => $this->request->getPost('jeniskelamin'),
 		];
 		
 		$this->db->table('students')->insert($data);
