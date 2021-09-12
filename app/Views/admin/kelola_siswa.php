@@ -118,7 +118,7 @@
                             <td><?=$value->Jurusan?></td>
                             <td><?=$value->jeniskelamin?></td>
                             <td>
-                                <a href="<?= base_url('/edit_siswa/'.$value->Nomor_Induk)?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                                <a href="<?= base_url('ubah_siswa/'.$value->Nomor_Induk)?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
                                 <form action="<?=base_url('/kelola_siswa/'. $value->Nomor_Induk)?>" method="post" class="inline" onsubmit="return confirm('Yakin Hapus Data?')">
                                     <input type="hidden" name="_method" value="DELETE">                        
                                     <button class="btn btn-danger">

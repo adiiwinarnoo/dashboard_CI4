@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLabusta | Dashboard</title>
+  <link rel="shortcut icon" type="image/png" href="/labusta.png"/>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -38,13 +39,14 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
-
 <?= $this->include('adminLte/head') ?>
 
 <?= $this->include('adminLte/navbar') ?>
 <?= $this->include('adminLte/sidebar') ?>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+
 
   <!-- Left side column. contains the logo and sidebar -->
   
@@ -70,31 +72,48 @@
             <!-- /.box-header -->
             <div class="box-body">
                 
-                    <form action="<?= base_url('kelola_siswa/'.$admin->Nomor_Induk)?>" method="post" autocomplete="off">
+                    <form action="<?= base_url('Guru/update/'.$guruedit->id)?>" method="post" autocomplete="off">
                     <div class="form-group">
-                        <input type="hidden" name="_method" value="PUT">
+                        <label>Mata Pelajaran</label>
+                        <select name="pelajaran" id="pelajaran" class="form-control" required>
+                        <?php foreach ($pelajaran as $key => $data) {?>
+                          <option value="<?=$data->id?>" <?= $guruedit->guru_id === $data->id ? "selected" : "" ?>> <?=$data->Pelajaran?></option>   
+                        <?php }?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="_method">
+                        <label>Nama Lengkap</label>
+                        <input type="text" name="Nama" placeholder="Masukan nama Lengkap" class="form-control" value="<?=$guruedit->Nama?>" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="_method">
                         <label>Nomor Induk</label>
-                        <input type="text" name="Nomor_Induk" placeholder="Masukan Nomor Induk" class="form-control" value="<?=$admin->Nomor_Induk?>" required readonly>
+                        <input type="varchar" name="Nomor_Induk" class="form-control" value="<?=$guruedit->Nomor_Induk ?>" required>
                     </div>
                     <div class="form-group">
-                        <label>Nama</label>
-                        <input type="text" name="Nama" placeholder="Masukan Nama Lengkap" value="<?=$admin->Nama?>" class="form-control" required autofocus>
+                        <label>Kelas</label>
+                        <select name="kelas" id="kelas" class="form-control" required>
+                        <?php foreach ($kelas as $key => $data) {?>
+                          <option value="<?=$data->id?>"<?= $guruedit->kelas_id === $data->id ? "selected" : "" ?>><?=$data->kelas?></option>   
+                        <?php }?>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="Password" placeholder="Masukan Password" value="<?=$admin->Password?>" class="form-control" required autofocus>
+                        <label>Jenis Kelamin</label>
+                        <select name="jeniskelamin" id="jeniskelamin" class="form-control" required>
+                        <?php foreach ($jk as $key => $data) {?>
+                          <option value="<?=$data->id?>"<?= $guruedit->jeniskelamin_id === $data->id ? "selected" : "" ?>><?=$data->jeniskelamin?></option>   
+                        <?php }?>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label>Id_Kelas</label>
-                        <input type="text" name="Id_Kelas" placeholder="Masukan Kelas" class="form-control" value="<?=$admin->Id_Kelas?>" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label>Id_Jurusan</label>
-                        <input type="text" name="Id_Jurusan" placeholder="Masukan Jurusan" class="form-control" value="<?=$admin->Id_Jurusan?>" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label>id_jeniskelamin</label>
-                        <input type="text" name="id_jeniskelamin" placeholder="Masukan Jeniskelamin" class="form-control" value="<?=$admin->id_jeniskelamin?>" required autofocus>
+                        <label>Upload Photo</label>
+                        <div style ="margin-bottom : 10px">
+                            <img src="<?=base_url('photo/'. $guruedit->photo)?>" width="100">
+                        </div>
+                        <input type="file" name="photo" class="form-control" required>
+
                     </div>
                     <div class="col-md-">
                         <button type="submit" class="btn btn-success pull-right">Simpan</button>

@@ -10,7 +10,8 @@ class LoginModel extends Model
 	protected $primaryKey           = 'id';
 	protected $useAutoIncrement     = true;
 	protected $returnType           = 'object';
-	protected $allowedFields        = ['Nomor_Induk','Password'];
+	// protected $allowedFields        = ['name','email','Password'];
+	protected $allowedFields        = ['Nomor_Induk','Nama','Id_Kelas','Id_Jurusan','id_jeniskelamin'];
 
 	// Dates
 	protected $useTimestamps        = false;

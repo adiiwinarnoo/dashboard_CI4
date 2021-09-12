@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLabusta | Dashboard</title>
-  <link rel="shortcut icon" type="image/png" href="/labusta.png"/>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -39,14 +38,13 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-
-
+<?= $this->include('adminLte/head') ?>
 
 <?= $this->include('adminLte/navbar') ?>
 <?= $this->include('adminLte/sidebar') ?>
-
+<body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
+
 
 
   <!-- Left side column. contains the logo and sidebar -->
@@ -67,74 +65,54 @@
     <!-- Main content -->
     <section class="content">
         <div class="box">
-
-        <!-- notif sukses  -->
-        <?php if (session()->getFlashdata('success')): ?> 
-            <div class="alert alert-success alert-dismissible showfade">
-                <div class="alert-body">
-                    <button class="close" data-dismiss="alert">x</button>
-                    <b>Success !!</b>
-                    <?=session()->getFlashdata('success')?>
-                </div>
-            </div>
-        <?php endif;?>
-
-
-        <!-- notif gagal -->
-        
-
-
             <div class="box-header col-md-12">
-              <h3 class="box-title">Tambah Guru</h3>
-              <br><br>  
+              <h3 class="box-title">Ubah Data Siswa</h3>
             </div>
-           
             <!-- /.box-header -->
-           
             <div class="box-body">
                 
-                    <form action="<?= base_url('guru/create')?>" method="post" autocomplete="off" enctype ="multipart/form-data">
+                    <form action="<?= base_url('siswa/update/'.$admin->id)?>" method="post" autocomplete="off">
                     <div class="form-group">
-                        <label>Mata Pelajaran</label>
-                        <select name="Pelajaran" id="Pelajaran" class="form-control">
-                        <?php foreach ($mapel as $key => $data) {?>
-                          <option value="<?=$data->id?>"><?=$data->Pelajaran?></option>   
-                        <?php }?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Nama Guru</label>
-                        <input type="text" name="Nama" placeholder="Masukan Nama Lengkap" class="form-control" required autofocus>
-                    </div>
-                    <div class="form-group">
+                        <input type="hidden" name="_method" value="PUT">
                         <label>Nomor Induk</label>
-                        <input type="varchar" name="Nomor_Induk" placeholder="Masukan Nomor Induk" class="form-control" required autofocus>
+                        <input type="text" name="Nomor_Induk" placeholder="Masukan Nomor Induk" class="form-control" value="<?=$admin->Nomor_Induk?>" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Nama</label>
+                        <input type="text" name="Nama" placeholder="Masukan Nama Lengkap" value="<?=$admin->Nama?>" class="form-control" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="Password" placeholder="Masukan Password" value="<?=$admin->Password?>" class="form-control" required autofocus>
                     </div>
                     <div class="form-group">
                         <label>Kelas</label>
                         <select name="kelas" id="kelas" class="form-control">
-                        <?php foreach ($kelasguru as $key => $data) {?>
-                          <option value="<?=$data->id?>"><?=$data->kelas?></option>   
+                        <?php foreach ($kelasid as $key => $data) {?>
+                          <option value="<?=$data->id?>" <?= $admin->Id_Kelas === $data->id ? "selected" : "" ?> ><?=$data->kelas?></option>   
+                        <?php }?>
+                        </select>
+                    </div> 
+                    <div class="form-group">
+                        <label>Jurusan</label>
+                        <select name="jurusan" id="jurusan" class="form-control">
+                        <?php foreach ($jurusan as $key => $data) {?>
+                          <option value="<?=$data->id?>"  <?= $admin->Id_Jurusan === $data->id ? "selected" : "" ?>><?=$data->Jurusan?></option>   
                         <?php }?>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Jenis Kelamin</label>
-                        <select name="jeniskelamin" id="jeniskelamin" class="form-control">
-                        <?php foreach ($jeniskelaminguru as $key => $data) {?>
-                          <option value="<?=$data->id?>"><?=$data->jeniskelamin?></option>   
+                        <select name="kelas" id="kelas" class="form-control">
+                        <?php foreach ($jeniskelamin as $key => $data) {?>
+                          <option value="<?=$data->id?>"  <?= $admin->id_jeniskelamin === $data->id ? "selected" : "" ?>><?=$data->jeniskelamin?></option>   
                         <?php }?>
                         </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Upload Photo</label>
-                        <input type="file" name="photo" class="form-control" required>
-                    </div>
-                    <div class="col-md-">
+                    </div>                    <div class="col-md-">
                         <button type="submit" class="btn btn-success pull-right">Simpan</button>
                     </div>
                 </form>
-               
+
             </div>
             <!-- /.box-body -->
         </div>         

@@ -7,6 +7,7 @@ use App\Models\JurusanModel;
 use App\Models\JeniskelaminModel;
 use App\Models\HomeModel;
 use App\Models\SiswaModel;
+use App\Models\ChatModel;
 
 class Home extends BaseController
 {
@@ -14,6 +15,7 @@ class Home extends BaseController
 	{
 		$this->homemodel = new HomeModel();
 		$this->siswam = new SiswaModel();
+		$this->chatmodel = new ChatModel();
 	}
 	
 
@@ -22,8 +24,13 @@ class Home extends BaseController
 		$modelchart = new HomeModel();
 		$db      = \Config\Database::connect();
 		$builder = $db->table('students'); 
+		$builder2 = $db->table('chat_bot');
 	
 		$siswachart = $builder->select('YEAR(created_at) AS tahun, COUNT(id) AS jumlah')
+								->groupBy('MONTH(created_at)')
+								->get();
+
+		$chartintent = $builder2->select('MONTH(created_at) AS bulan, COUNT(id) AS jumlah')
 								->groupBy('MONTH(created_at)')
 								->get();
 
@@ -31,8 +38,10 @@ class Home extends BaseController
 		'title' => 'Home',
 		'total_siswa'=> $this->homemodel->total_siswa(),
 		'total_admin'=> $this->homemodel->total_admin(),
-		'siswa'	   => $siswachart,
+		'siswa' => $siswachart,
+		'topintent' => $this->topintent(), 
 		'total_percakapan'=> $this->homemodel->total_percakapan(),
+		'total_guru' => $this->homemodel->total_guru(),
 		'isi' => 'home',
 		];
 	
@@ -40,6 +49,27 @@ class Home extends BaseController
 		echo view('adminLte/wraper',$data);
 
 	}
+	private function topintent()
+	{
+		$modelChart = $this->homemodel->TopIntent();
+		$intentChart = ["group"=>[], "data"=>[]];
+
+		// $pie = array(
+		// 	"group"=>array(),
+		// 	"data"=>array()
+		// );
+	
+			foreach ($modelChart as $value)
+			{
+			   array_push($intentChart["group"], $value["intent"] );
+			   array_push($intentChart["data"], $value["count(1)"]);
+			}
+	   
+		return $intentChart;
+	}
+
+
+
 	public function kelola_siswa()
 	{
 		$db  = \Config\Database::connect();
@@ -115,4 +145,6 @@ class Home extends BaseController
 		return redirect()->to(base_url('kelola_siswa'))->with('success','Data Berhasil Di Hapus');
 
 	}
+
+
 }

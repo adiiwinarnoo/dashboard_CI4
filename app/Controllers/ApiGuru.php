@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
 use App\Models\GuruModel;
+use App\Models\ProfileModel;
 use DB;
 
 class ApiGuru extends ResourceController
@@ -27,30 +28,29 @@ class ApiGuru extends ResourceController
 	public function getGuru()
 	{
 
-		$guruid = $this->request->getPost('id_guru');
+		$nisn = $this->request->getPost('Nomor_Induk');
 		$validation = \Config\Services::validation();
 
-
-		$model = new GuruModel();
-
 		$params = [
-			'id_guru' => $guruid
+			'Nomor_Induk' => $nisn
 		];
 
+		$model = new ProfileModel();
+		$siswaLogin = $model->detail_siswa($nisn);
 
-        if ($guruid != null) {
+		if ($siswaLogin) {
 			$response['sukses'] = true;
             $response['status'] = 1;
 			$response['pesan'] = 'Data Ditemukan';
-            $response['guru'] = $model->detail_guru($guruid);
+            $response['siswa'] = $model->detail_siswa($nisn);
 			return $this->respond($response,200);
-
-        }else {
-            $response['sukses'] = false;
+		}else{
+			$response['sukses'] = false;
             $response['status'] = 0;
-			$response['pesan'] = 'Data tidak ditemukan';
+			$response['pesan'] = 'data tidak ditemukan';
 			return $this->respond($response,500);
-        }
+       
+		}
 	}
 
 	public function getGuruAll()

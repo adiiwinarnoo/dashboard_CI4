@@ -14,6 +14,7 @@
 		"laminas/laminas-escaper": "^2.6",
 		"psr/log": "^1.1",
 		"google/cloud-dialogflow": "^0.23.0"
+
 	},
 	"require-dev": {
 		"codeigniter4/codeigniter4-standard": "^1.0",

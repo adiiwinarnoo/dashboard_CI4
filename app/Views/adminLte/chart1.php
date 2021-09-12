@@ -1,13 +1,16 @@
 <canvas id="myChart1" height="50" width="50" ></canvas>
 <script>
 var ctx = document.getElementById('myChart1').getContext('2d');
+var intenttop = [];
+
+
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'doughnut',
     data: {
-        labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct','Nov','Dec'],
+        labels: <?= json_encode($topintent["group"])?>,
         datasets: [{
             label: 'Siswa Labusta',
-            data: [12,5,10,11,20,30],
+            data: <?= json_encode($topintent["data"])?>,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',

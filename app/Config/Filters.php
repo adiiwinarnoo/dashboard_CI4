@@ -65,11 +65,18 @@ class Filters extends BaseConfig
 		[
 			'home',
 			'kelola_siswa',
-			'edit_siswa',
 			'tambah_siswa',
+			'ubah_siswa/$1',
+			'edit_siswa/',
+			'/edit_siswa',
+			'edit_siswa/$id',
 			'Materi',
+			'siswa/*',
+			'Siswa',
 			'Materi/*',
-			'Percakapan'
+			'Percakapan',
+			'guru',
+			'Guru/*'
 		]
 		
 		]

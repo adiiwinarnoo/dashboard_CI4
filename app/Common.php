@@ -13,3 +13,6 @@
  *
  * @link: https://codeigniter4.github.io/CodeIgniter4/
  */
+
+putenv("GOOGLE_APPLICATION_CREDENTIALS=" . ROOTPATH . "service-account.json");
+define("PROJECT_ID", "labustabot-teei");

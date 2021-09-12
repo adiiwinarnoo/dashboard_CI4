@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use DB;
-
+use App\Models\RegisterModel;
 class Auth extends BaseController
 {
 	public function index()
@@ -42,5 +42,20 @@ class Auth extends BaseController
     {
         session()->remove('id');
         return redirect()->to(base_url('login'));
+    }
+
+    public function registerProses()
+    {
+        $model = new RegisterModel();
+
+        $data = [
+            'nomor_induk' => $this->request->getPost('nomor_induk'),
+            'password'=> password_hash($this->request->getPost('password'), PASSWORD_BCRYPT),
+            'nama' => $this->request->getPost('nama')
+        ];
+
+        $model->insert($data);
+        return redirect()->to(base_url('register'))->with('success','Data Berhasil Disimpan');
+
     }
 }

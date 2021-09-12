@@ -62,14 +62,14 @@
         </div>
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-yellow">
+          <div class="small-box bg-red">
             <div class="inner">
-              <h3><?=$total_percakapan?></h3>
+              <h3><?=$total_guru?></h3>
 
-              <p>Total Percakapan Chatbot SMK Lab Business School Tangerang</p>
+              <p>Total Guru SMK Lab Business School Tangerang</p>
             </div>
             <div class="icon">
-              <i class="ion ion-chatbubbles"></i>
+              <i class="ion ion-android-contacts"></i>
             </div>
           </div>     
         </div>
@@ -77,12 +77,19 @@
 
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <?= $this->include('adminLte/chart') ?>
+          <div>
+            <p>Siswa Labusta</p>
+            <?= $this->include('adminLte/chart') ?>
+          </div>
+          
         </div>
 
           <div class="col-lg-3 col-xs-6">
           <!-- small box -->
+          <div>
+          <p>TOP intent</p>
           <?= $this->include('adminLte/chart1') ?>
+          </div>
         </div>
        
 

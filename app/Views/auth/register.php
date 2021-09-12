@@ -37,15 +37,29 @@
                     <?=session()->getFlashdata('error')?>
                 </div>
             </div>
+
+        <?php endif;?>
+        <?php if (session()->getFlashdata('success')): ?> 
+            <div class="alert alert-success alert-dismissible showfade">
+                <div class="alert-body">
+                    <button class="close" data-dismiss="alert">x</button>
+                    <b>Sukses !!</b>
+                    <?=session()->getFlashdata('success')?>
+                </div>
+            </div>
         <?php endif;?>
   <!-- /.login-logo -->
   <div class="login-box-body responsive">
-    <p class="login-box-msg">Silahkan Login Terlebih Dahulu</p>
+    <p class="login-box-msg">Silahkan Daftar Terlebih Dahulu</p>
 
-    <form action="<?=base_url('auth/loginProses')?>" method="post">
+    <form action="<?=base_url('auth/registerProses')?>" method="post">
       <div class="form-group has-feedback">
         <input type="varchar" class="form-control" placeholder="Nomor Induk" name="nomor_induk">
         <span class="glyphicon glyphicon-edit form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="varchar" class="form-control" placeholder="Nama Lengkap" name="nama">
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <input type="password" class="form-control" placeholder="Password" name="password">
@@ -54,7 +68,7 @@
       <div class="row">
         <!-- /.col -->
         <div class="col-xs-12">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Daftar</button>
         </div>
         <!-- /.col -->
       </div>
@@ -62,7 +76,7 @@
 
     
     <br><br>
-    <a href="<?= base_url('register')?>" class="text-center">Daftar untuk Admin baru</a>
+    <a href="<?= base_url('login')?>" class="text-center">Sudah punya akun ? Login Disini</a>
 
   </div>
   <!-- /.login-box-body -->

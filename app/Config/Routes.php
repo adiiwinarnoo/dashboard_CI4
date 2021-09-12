@@ -36,21 +36,25 @@ $routes->get('/', 'Auth::index');
 $routes->get('/kelola_siswa', 'Home::kelola_siswa');
 $routes->get('tambah_siswa', 'Home::create');
 $routes->post('/tambah_siswa', 'Home::store');
-$routes->get('/edit_siswa/(:any)', 'Home::edit/$1');
+$routes->get('edit_siswa/(:any)', 'Home::edit/$1');
 $routes->put('kelola_siswa/(:any)', 'Home::update/$1');
 $routes->delete('/kelola_siswa/(:any)', 'Home::destroy/$1');
+$routes->get('/ubah_siswa/(:any)', 'Home::edit/$1');
 
 $routes->get('login', 'Auth::login');
 
 $routes->presenter('materis', ['filters'=>'isLoggedIn']);
 $routes->presenter('percakapan', ['filters'=>'isLoggedIn']);
-$routes->presenter('guru');
+$routes->presenter('guru', ['filters'=>'isLoggedIn']);
+$routes->presenter('register');
+$routes->presenter('siswa',['filters'=>'isLoggedIn'] );
 
+// API
 $routes->post('ApiGuru', 'ApiGuru::getGuru');
 $routes->get('ApiSiswa', 'ApiSiswa::tampildata');
 $routes->post('ApiSiswa', 'ApiSiswa::tampildata');
-
 $routes->post('Apilogin', 'Apilogin::Login');
+$routes->post('ApiProfil', 'ApiProfil::SiswaNISN');
 
 /*
  * --------------------------------------------------------------------

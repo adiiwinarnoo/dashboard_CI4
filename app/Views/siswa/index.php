@@ -39,20 +39,20 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-
-
 
 <?= $this->include('adminLte/navbar') ?>
 <?= $this->include('adminLte/sidebar') ?>
 
-<div class="wrapper">
+<body class="hold-transition skin-blue sidebar-mini">
 
+
+<div class="wrapper">
 
   <!-- Left side column. contains the logo and sidebar -->
   
   <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
+  
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -66,9 +66,7 @@
 
     <!-- Main content -->
     <section class="content">
-        <div class="box">
-
-        <!-- notif sukses  -->
+    <div class="box">
         <?php if (session()->getFlashdata('success')): ?> 
             <div class="alert alert-success alert-dismissible showfade">
                 <div class="alert-body">
@@ -78,71 +76,100 @@
                 </div>
             </div>
         <?php endif;?>
-
-
-        <!-- notif gagal -->
-        
-
-
-            <div class="box-header col-md-12">
-              <h3 class="box-title">Tambah Guru</h3>
-              <br><br>  
+        <?php if (session()->getFlashdata('error')): ?> 
+            <div class="alert alert-danger alert-dismissible showfade">
+                <div class="alert-body">
+                    <button class="close" data-dismiss="alert">x</button>
+                    <b>Error !!</b>
+                    <?=session()->getFlashdata('success')?>
+                </div>
             </div>
-           
+        <?php endif;?>
+
+            <div class="box-header">
+              <h3 class="box-title">Data Siswa</h3>
+              
+
+              <br><br>
+              
+              <div class="section-header-button">
+                <a href="<?=base_url('siswa/new')?>" class="btn btn-primary pull-right">Tambah Data</a>
+                             
+                              <div class="pull-right" style="margin-top: 10px">
+                              <div class="col-lg-14">
+                                <form action="" method="get">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="Cari Berdasarkan nama.." name="cari">
+                                      <span class="input-group-btn">
+                                        <button class="btn btn-primary pull-right" name="submit" type="submit" >Cari</button>
+                                      </span>
+                                    </div><!-- /input-group -->
+                                </form>
+                                  </div><!-- /.col-lg-6 -->
+                              </div>
+                              </div>
+            </div>
             <!-- /.box-header -->
-           
-            <div class="box-body">
-                
-                    <form action="<?= base_url('guru/create')?>" method="post" autocomplete="off" enctype ="multipart/form-data">
-                    <div class="form-group">
-                        <label>Mata Pelajaran</label>
-                        <select name="Pelajaran" id="Pelajaran" class="form-control">
-                        <?php foreach ($mapel as $key => $data) {?>
-                          <option value="<?=$data->id?>"><?=$data->Pelajaran?></option>   
-                        <?php }?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Nama Guru</label>
-                        <input type="text" name="Nama" placeholder="Masukan Nama Lengkap" class="form-control" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label>Nomor Induk</label>
-                        <input type="varchar" name="Nomor_Induk" placeholder="Masukan Nomor Induk" class="form-control" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label>Kelas</label>
-                        <select name="kelas" id="kelas" class="form-control">
-                        <?php foreach ($kelasguru as $key => $data) {?>
-                          <option value="<?=$data->id?>"><?=$data->kelas?></option>   
-                        <?php }?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Jenis Kelamin</label>
-                        <select name="jeniskelamin" id="jeniskelamin" class="form-control">
-                        <?php foreach ($jeniskelaminguru as $key => $data) {?>
-                          <option value="<?=$data->id?>"><?=$data->jeniskelamin?></option>   
-                        <?php }?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Upload Photo</label>
-                        <input type="file" name="photo" class="form-control" required>
-                    </div>
-                    <div class="col-md-">
-                        <button type="submit" class="btn btn-success pull-right">Simpan</button>
-                    </div>
-                </form>
-               
+            <div class="box-body no-padding table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                        <th></th>
+                            <th>No</th>
+                            <th>Nomor Induk</th>
+                            <th>Nama Lengkap</th>
+                            <th>Password</th>
+                            <th>Kelas</th>
+                            <th>Jurusan</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Aksi</th>
+                        </tr>
+                        <?php $i = 1 + (5 *($pageurut - 1 ));?>
+                        <?php foreach ($siswa as $key => $value):?>
+                        <tr>
+                        <td></td>
+                            <td><?=$i ++;?></td>
+                            <td><?=$value->Nomor_Induk?></td>
+                            <td><?=$value->Nama?></td>
+                            <td><?=$value->Password?></td>
+                            <td><?=$value->kelas?></td>
+                            <td><?=$value->Jurusan?></td>
+                            <td><?=$value->jeniskelamin?></td>
+                            <td>
+                                <a href="<?= base_url('siswa/edit/'.$value->id)?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                                <form action="<?=base_url('siswa/delete/'. $value->id)?>" method="post" class="inline" onsubmit="return confirm('Yakin Hapus Data?')">
+                                    <input type="hidden" name="_method" value="DELETE">                        
+                                    <button class="btn btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <?php endforeach;?>
+                    </tbody>
+                    
+                </table>
+                <div style="float: right" >
+                   <div style="margin-right:10px">
+                    <?= $pager->links()?>
+                  </div>
+                </div>
+
+                <div style="margin: 20px">
+                showing
+                <?=$i-1?>
+                data
+
+                </div>
+
             </div>
             <!-- /.box-body -->
-        </div>         
+          </div>
+    
+                
+              
     </section>
     <!-- /.content -->
-
-
-
   </div>
   <!-- /.content-wrapper -->
   <?= $this->include('adminLte/footer') ?>

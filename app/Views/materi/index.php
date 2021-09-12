@@ -90,6 +90,20 @@
               <h3 class="box-title">Materi SMK Lab Business School Tangerang</h3>
               <div class="section-header-button">
                 <a href="<?=base_url('Materi/new')?>" class="btn btn-primary pull-right">Tambah Materi</a>
+
+                <div class="pull-right" style="margin-top: 10px">
+                              <div class="col-lg-14">
+                                <form action="" method="get">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="Cari Berdasarkan Mata Pelajaran" name="cari">
+                                      <span class="input-group-btn">
+                                        <button class="btn btn-primary pull-right" name="submit" type="submit" >Cari</button>
+                                      </span>
+                                    </div><!-- /input-group -->
+                                </form>
+                              </div><!-- /.col-lg-6 -->
+                            </div>
+
               </div>
             </div>
             <!-- /.box-header -->
@@ -105,12 +119,13 @@
                             <th>Aksi</th>
                             
                         </tr>
+                        <?php $i = 1 + (5 *($pageurut - 1 ));?>
                         <?php foreach ($materis as $key => $value):?>
                         <tr>
                         <td></td>
-                            <td><?=$key + 1 ?></td>
+                            <td><?=$i++ ?></td>
                             <td><?=$value->nama_pelajaran?></td>
-                            <td><?=$value->id_kelas?></td>
+                            <td><?=$value->kelas?></td>
                             <td><a href="<?=$value->link?>" class="href"><?=$value->link?></a></td>
                             <td>
                                 <a href="<?= base_url('materi/edit/'.$value->id)?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
@@ -128,15 +143,20 @@
                     </tbody>
                     
                 </table>
-                <div class="box-tools">
-                <ul class="pagination pagination-sm pull-right" style="margin: 20px;"> 
-                  <li><a href="#">«</a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">»</a></li>
-                </ul>
-              </div>
+
+                <div style="float: right" >
+                   <div style="margin-right:10px">
+                    <?= $pager->links()?>
+                  </div>
+                </div>
+
+                <div style="margin: 20px">
+                showing
+                <?=$i-1?>
+                data
+
+                </div>
+                
             </div>
             <!-- /.box-body -->
           </div>

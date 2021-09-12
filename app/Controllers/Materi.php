@@ -18,10 +18,22 @@ class Materi extends ResourcePresenter
 	public function index()
 	{
 	
+		$db  = \Config\Database::connect();
 		$model = new MateriModel();
-		$kelas = new KelasModel();
-		$data['materis'] = $model->findAll();
-	
+		$pageUrut = $this->request->getVar('page') ? $this->request->getVar('page') : 1;
+
+		$cari = $this->request->getVar('cari');
+		if ($cari) {
+			$carisiswa =$model->search($cari);
+		}else{
+			$carisiswa = $model;
+		}
+		
+		$data['materis'] = $model->select('materis.id, nama_pelajaran, id_kelas, link, kelas')
+								 ->orderBy('id','asc')
+								 ->join('kelas','materis.id_kelas = kelas.id','left')->paginate(5);
+		$data['pager']= $model->pager;
+		$data['pageurut'] = $pageUrut;
 		
 		return view('materi/index',$data);
 	}
@@ -87,6 +99,7 @@ class Materi extends ResourcePresenter
 			'materiedit' => $model->where('id', $id)->first(),
 			'kelasid' => $kelas->findAll()
 		];
+		
 
 		return view('materi/edit',$data);
 	}

@@ -40,6 +40,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
+
 <?= $this->include('adminLte/navbar') ?>
 <?= $this->include('adminLte/sidebar') ?>
 
@@ -81,7 +82,7 @@
                 <div class="alert-body">
                     <button class="close" data-dismiss="alert">x</button>
                     <b>Error !!</b>
-                    <?=session()->getFlashdata('success')?>
+                    <?=session()->getFlashdata('error')?>
                 </div>
             </div>
         <?php endif;?>
@@ -90,6 +91,19 @@
               <h3 class="box-title">Data Guru SMK Lab Business School Tangerang</h3>
               <div class="section-header-button">
                 <a href="<?=base_url('Guru/new')?>" class="btn btn-primary pull-right">Tambah Guru</a>
+                            <div class="pull-right" style="margin-top: 10px">
+                              <div class="col-lg-14">
+                                <form action="" method="get">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="Cari Berdasarkan nama.." name="cari">
+                                      <span class="input-group-btn">
+                                        <button class="btn btn-primary pull-right" name="submit" type="submit" >Cari</button>
+                                      </span>
+                                    </div><!-- /input-group -->
+                                </form>
+                              </div><!-- /.col-lg-6 -->
+                            </div>
+                              
               </div>
             </div>
             <!-- /.box-header -->
@@ -99,22 +113,30 @@
                         <tr>
                         <th></th>
                             <th>No</th>
-                            <th>ID Guru</th>
+                            <th>Mata Pelajaran</th>
                             <th>Nama</th>
                             <th>Nomor Induk</th>
+                            <th>Kelas</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Foto</th>
                             <th>Aksi</th>
                         </tr>
-
+                        <?php $i = 1 + (5 *($pageurut - 1 ));?>
                         <?php foreach ($gurus as $key => $value):?>
                         <tr>
                         <td></td>
-                            <td><?=$key + 1 ?></td>
-                            <td><?=$value->id_guru?></td>
+                            <td><?=$i++ ?></td>
+                            <td><?=$value->Pelajaran?></td>
                             <td><?=$value->Nama?></td>
                             <td><?=$value->Nomor_Induk?></td>
+                            <td><?=$value->kelas?></td>
+                            <td><?=$value->jeniskelamin?></td>
+                            <td><img src="<?=base_url('photo/'. $value->photo)?>" width="100" ></td>
+                            
+                            
                             <td>
-                                <a href="<?= base_url('/edit_siswa/'.$value->id)?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
-                                <form action="<?=base_url('/kelola_siswa/'. $value->id)?>" method="post" class="inline">
+                                <a href="<?= base_url('Guru/edit/'.$value->id)?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                                <form action="<?=base_url('Guru/delete/'. $value->id)?>" method="post" class="inline" onsubmit="return confirm('Yakin Hapus Data?')">
                                     <input type="hidden" name="_method" value="DELETE">                        
                                     <button class="btn btn-danger">
                                     <i class="fa fa-trash"></i>
@@ -122,21 +144,19 @@
                                 </form>
                             </td>
                         </tr>
+                       
                         <?php endforeach;?>
-
-                        
                     </tbody>
                     
                 </table>
-                <div class="box-tools">
-                <ul class="pagination pagination-sm pull-right" style="margin: 20px;"> 
-                  <li><a href="#">«</a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">»</a></li>
-                </ul>
-              </div>
+                <div class="pull-right" style="margin:20px"> 
+                <?= $pager->links()?>
+                </div>
+                <div style="margin: 20px">
+                showing
+                <?=$i-1?>
+                data
+
             </div>
             <!-- /.box-body -->
           </div>

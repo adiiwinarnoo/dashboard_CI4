@@ -82,7 +82,7 @@
                         <label>Kelas</label>
                         <select name="kelas" id="kelas" class="form-control">
                         <?php foreach ($kelasid as $key => $data) {?>
-                          <option value="<?=$data->id?>"><?=$data->kelas?></option>   
+                          <option value="<?=$data->id?>"  <?= $materiedit->id_kelas === $data->id ? "selected" : "" ?> ><?=$data->kelas?></option>   
                         <?php }?>
                         </select>
                     </div>

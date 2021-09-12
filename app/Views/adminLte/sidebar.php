@@ -5,11 +5,11 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="<?= base_url() ?>/template/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="<?= base_url() ?>/labusta.png" class="img-circle" alt="User Image">
         </div>
         
         <div class="pull-left info">
-          <p>Admin Labusta</p>
+          <p><?=$_SESSION['nama']?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -46,7 +46,7 @@
        
         
         <li>
-          <a href="<?= base_url('kelola_siswa') ?>">
+          <a href="<?= base_url('siswa') ?>">
             <i class="fa fa-edit"></i> 
             <span>Kelola Siswa</span>
           </a>
@@ -56,9 +56,18 @@
           <a href="<?=base_url('Guru')?>">
             <i class="fa fa-edit"></i>
             <span>Kelola Guru</span>
-           
           </a>
         </li>
+
+        <li>
+          <a href="<?=base_url('auth/logout')?>">
+            <i class="fa fa-power-off"></i>
+            <span>Keluar</span>
+          </a>
+        </li>
+
+
+
         </ul>
         
     </section>
